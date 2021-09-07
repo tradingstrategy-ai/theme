@@ -1,12 +1,12 @@
-@mixin button-variant($background, $border, $hover-background: darken($background, 0%), $hover-border: darken($border, 0%), $active-background: $background, $active-border: darken($border, 0%)) {
+@mixin button-variant($background, $border, $hover-background: $secondary, $hover-border: darken($secondary, 0%), $active-background: $background, $active-border: darken($border, 0%)) {
     color: color-yiq($background);
     @include gradient-bg($background);
 
     @include hover {
-        color: color-yiq($hover-background);
+        // color: color-yiq($hover-background);
         background-color: $hover-background;
         border-color: $hover-border;
-        @include box-shadow($shadow-inset);
+        // @include box-shadow($secondary-inset);
     }
 
     &.disabled,

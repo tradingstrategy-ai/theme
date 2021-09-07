@@ -9,8 +9,11 @@ $enable-print-styles:       true;
 
 // Color scheme
 $default:       #262833;
-$primary:       #e6e7ee;
-$secondary:     #2D4CC8;
+// $primary:       #e6e7ee;
+$primary:       #FFF1E5;
+$dark-primary:       #ccbeb3;
+//$secondary:     #2D4CC8;
+$secondary: #80deea;
 
 // Generic colors
 $blue:    #0056B3;
@@ -35,7 +38,8 @@ $gray-600: #93a5be;
 $gray-700: #66799e;   
 $gray-800: #525480;   
 $gray-900: #44476A;
-$dark    : #31344b; 
+//$dark    : #31344b;
+$dark    : #000000;
 $black   : #262833;
 
 
@@ -59,7 +63,8 @@ $warning:       $yellow;
 $danger:        $red;
 $gray:          $gray-900;
 $light:         $gray-400;
-$soft:          $gray-300;
+//$soft:          $gray-300;
+$soft:          $primary;
 $dark:          $dark;
 
 // Brands colors
@@ -143,9 +148,16 @@ $body-bg: $soft;
 $body-color: $gray-900;
 
 // Shadows
-$shadow-inset:            inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
-$box-shadow-soft:         6px 6px 12px #b8b9be, -6px -6px 12px #ffffff;
-$box-shadow-light:        3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+//$shadow-inset:            inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+$shadow-inset:            inset 2px 2px 5px #ccbeb3, inset -3px -3px 7px #ccbeb3;
+
+
+$secondary-inset:            inset 2px 2px 5px #ccbeb3, inset -3px -3px 7px #ccbeb3;
+
+//$box-shadow-soft:         6px 6px 12px #b8b9be, -6px -6px 12px #ffffff;
+$box-shadow-soft:         6px 6px 12px #ccbeb3, -6px -6px 12px #ccbeb3;
+//$box-shadow-light:        3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+$box-shadow-light:        3px 3px 6px #ccbeb3, -3px -3px 6px #ccbeb3;
 
 // Sections
 $section-colors: ();
@@ -219,7 +231,7 @@ $border-width-md:             0.125rem;
 $border-width-lg:             0.25rem;
 $border-width-xl:             0.375rem;
 $border-color-white:          $white;
-$border-color:                $gray-200;
+$border-color:                $dark-primary;
 
 $border-radius:               .55rem;
 $border-radius-xl:            .95rem;
@@ -451,8 +463,8 @@ $btn-font-weight:             $font-weight-normal;
 $btn-text-transform:          uppercase;
 $btn-letter-spacing:          .025em;
 $btn-focus-width:             $border-width;
-$btn-focus-box-shadow:        $shadow-inset;
-$btn-active-box-shadow:       $shadow-inset;
+$btn-focus-box-shadow:        $box-shadow-light;
+$btn-active-box-shadow:       $box-shadow-light;
 
 
 
@@ -481,7 +493,8 @@ $input-disabled-bg:                     $gray-300;
 $input-muted-bg:                        $gray-100;
 
 $input-color:                           $body-color;
-$input-border-color:                    $light;
+//$input-border-color:                    $light;
+$input-border-color:                    $dark-primary;
 $input-border-width:                    $border-width ;
 
 $input-focus-bg:                        $primary;
@@ -601,7 +614,7 @@ $dropdown-spacer:                   .825rem;
 $dropdown-font-size:                $font-size-sm;
 $dropdown-bg:                       $primary;
 $dropdown-border-width:             $border-width;
-$dropdown-border-color:             $light;
+$dropdown-border-color:             $dark-primary;
 $dropdown-border-radius:            $border-radius;
 $dropdown-item-color:               $body-color;
 $dropdown-item-font-weight:         $font-weight-light;
