@@ -12,6 +12,7 @@ label {
 
 .form-control {
     font-size: $input-font-size;
+    font-weight: 500;
     border-radius:$input-border-radius;
     @include box-shadow($shadow-inset);
     
