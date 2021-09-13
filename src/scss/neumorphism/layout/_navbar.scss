@@ -288,6 +288,7 @@
             }
         }
 
+        /*
         .dropdown-menu {
             &.show {
                 opacity: 1;
@@ -299,15 +300,17 @@
                 display: block;
                 animation: hide-navbar-dropdown .15s ease backwards;
             }
-        }
+        }*/
 
         .dropdown-menu {
             display: block;
             opacity: 0; 
             pointer-events: none;
-            transition: $transition-base;
+            //transition: $transition-base;
         }
 
+
+        /*
         .dropdown:hover,
         .dropdown-submenu:hover {
             & > .dropdown-menu {
@@ -315,7 +318,7 @@
                 opacity: 1;
                 pointer-events: auto;
             }
-        }
+        }*/
 
         .dropdown:hover .nav-link > .nav-link-arrow {
             @include transform(rotate(180deg));
@@ -385,7 +388,7 @@
         overflow-y: auto;
         // using !important to overwrite Bootstrap's inline styles
         height: calc(100vh - 30px) !important;
-        opacity: 0;
+        opacity: 1;
 
         .navbar-toggler {
             position: relative;
@@ -434,11 +437,11 @@
         color: $dark;
         border-radius: $dropdown-border-radius;
         background: $primary;
-        animation: show-navbar-collapse .2s ease forwards;
+        // animation: show-navbar-collapse .2s ease forwards;
         @include box-shadow($box-shadow-soft);
     }
 
     .navbar-collapse.collapsing-out {
-        animation: hide-navbar-collapse .2s ease forwards;
+        // animation: hide-navbar-collapse .2s ease forwards;
     }
 }
