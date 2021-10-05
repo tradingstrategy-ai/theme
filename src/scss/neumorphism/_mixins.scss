@@ -9,3 +9,9 @@
 @import "mixins/popover";
 @import "mixins/transform"; 
 @import "mixins/utilities";
+
+.border-sharp {
+  border-color: transparent !important;
+}
+
+
