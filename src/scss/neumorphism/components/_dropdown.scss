@@ -20,16 +20,18 @@
         color: $dropdown-item-color;
         transition: $transition-base;
         font-weight: $dropdown-item-font-weight;
+        //border: 2px solid transparent;
         
         &:hover{
             color: $dropdown-item-hover-color;
             @include box-shadow($secondary-inset);
             background-color: $secondary;
+            //border: 2px solid black;
         }
     }
 
     .show & {
-        animation: show-dropdown .2s ease forwards;
+        animation: show-dropdown .3s ease forwards;
     }
 
 }

@@ -8,6 +8,7 @@ $enable-grid-classes:       true;
 $enable-print-styles:       true;
 
 // Color scheme
+
 $default:       #262833;
 // $primary:       #e6e7ee;
 $primary:       #FFF1E5;
@@ -675,8 +676,8 @@ $navbar-dark-hover-bg:              rgba(255, 255, 255, .1);
 $navbar-dark-active-bg:             rgba(255, 255, 255, .1);
 $navbar-dark-color:                 $dark;
 $navbar-dark-hover-color:           $black;
-$navbar-dark-active-color:          rgba($white, .65);
-$navbar-dark-disabled-color:        rgba($white, .25);
+$navbar-dark-active-color:          $default;
+$navbar-dark-disabled-color:        $gray-500;
 $navbar-dark-toggler-border-color:  transparent;
 
 $navbar-light-bg:                   transparent;

@@ -741,8 +741,8 @@ $navbar-light-toggler-border-color: rgba($black, .1) !default;
 
 $navbar-light-brand-color:                $navbar-light-active-color !default;
 $navbar-light-brand-hover-color:          $navbar-light-active-color !default;
-$navbar-dark-brand-color:                 $navbar-dark-active-color !default;
-$navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
+$navbar-dark-brand-color:                 $navbar-light-active-color !default;
+$navbar-dark-brand-hover-color:           $navbar-light-active-color !default;
 
 
 // Dropdowns
