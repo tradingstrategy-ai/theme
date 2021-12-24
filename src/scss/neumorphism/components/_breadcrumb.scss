@@ -30,33 +30,6 @@
   padding: 0;
 }
 
-@each $color, $value in $theme-colors {
-  .breadcrumb-#{$color}  {
-      background-color: $primary;
-      @include box-shadow($shadow-inset);
-      .breadcrumb-item{
-          a{
-            color: $value;
-          }
-          &::before{
-            color:$value;
-          }
-          &.active {
-              color: $gray;
-          }
-      }
-      &.breadcrumb-transparent {
-        background: transparent;
-        box-shadow: none;
-        .breadcrumb-item {
-          &.active {
-            color: $value;
-          }
-        }
-      }
-  }
-}
-
 .breadcrumb-text-light {
   .breadcrumb-item {
     &, a {

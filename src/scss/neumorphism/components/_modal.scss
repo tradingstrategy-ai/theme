@@ -37,10 +37,3 @@
         border-radius: 0;
     }
 }
-
-@each $color, $value in $theme-colors {
-    .modal-#{$color} {
-        @include modal-variant($value);
-    }
-}
-
