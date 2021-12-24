@@ -19,11 +19,7 @@
 
   + .breadcrumb-item {
     &:before{
-      content: "\f101";
-      font-family: $font-awesome-5;
-      font-weight: 900;
-      font-size: .625rem;
-      color: $breadcrumb-divider-color;
+      content: "▸";
     }
   }
   
