@@ -31,8 +31,8 @@
 
     // change this value to update the generated classes
     // if you add 20, classes will be .mt-20, pl-40, pb-20 and so on
-    $mp-increment: 50;
-    $nr-increments: 13;
+    $mp-increment: 6;
+    $nr-increments: 6;
 
     // Negative margins in pixels
     @for $nr from 1 to $nr-increments {
