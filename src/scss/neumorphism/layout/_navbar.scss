@@ -20,7 +20,7 @@
         text-transform: $navbar-nav-link-text-transform;
         letter-spacing: $navbar-nav-link-letter-spacing;
         font-weight: $navbar-nav-link-font-weight;
-        @include transitions(.8s, $transition-bezier-card);
+        //@include transitions(.8s, $transition-bezier-card);
 
         .nav-link-inner-text {
             margin-left: .25rem;
