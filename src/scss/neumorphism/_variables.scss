@@ -8,13 +8,11 @@ $enable-grid-classes:       true;
 $enable-print-styles:       true;
 
 // Color scheme
-
-$default:       #262833;
-// $primary:       #e6e7ee;
-$primary:       #FFF1E5;
-$dark-primary:       #ccbeb3;
-//$secondary:     #2D4CC8;
-$secondary: #80deea;
+// (updated colors from the new 2022 design system)
+$default:    #0B0B14;
+$primary:    #FDF8F2;
+$light-gray: #A9A9B2;
+$secondary:  #757684;
 
 // Generic colors
 $blue:    #0056B3;
@@ -35,13 +33,12 @@ $gray-200: #fafbfe;
 $gray-300: #e6e7ee;
 $gray-400: #D1D9E6;
 $gray-500: #b1bcce;
-$gray-600: #93a5be;   
-$gray-700: #66799e;   
-$gray-800: #525480;   
+$gray-600: #93a5be;
+$gray-700: #66799e;
+$gray-800: #525480;
 $gray-900: #44476A;
-//$dark    : #31344b;
-$dark    : #000000;
-$black   : #262833;
+$dark    : #0B0B14;
+$black   : #0B0B14;
 
 
 $grays: ();
@@ -63,8 +60,7 @@ $info:          $teal;
 $warning:       $yellow;
 $danger:        $red;
 $gray:          $gray-900;
-$light:         $dark-primary;
-//$soft:          $gray-300;
+$light:         $light-gray;
 $soft:          $primary;
 $dark:          $dark;
 
@@ -119,7 +115,7 @@ $brand-colors: map-merge((
   "twitch":       $twitch,
   "paypal":       $paypal,
   "behance":      $behance,
-  "reddit" :      $reddit,  
+  "reddit" :      $reddit,
   "github":       $github
 ), $brand-colors);
 
@@ -235,7 +231,7 @@ $border-width-md:             0.125rem;
 $border-width-lg:             0.25rem;
 $border-width-xl:             0.375rem;
 $border-color-white:          $white;
-$border-color:                $dark-primary;
+$border-color:                $light-gray;
 
 $border-radius:               .55rem;
 $border-radius-xl:            .95rem;
@@ -498,7 +494,7 @@ $input-muted-bg:                        $gray-100;
 
 $input-color:                           $body-color;
 //$input-border-color:                    $light;
-$input-border-color:                    $dark-primary;
+$input-border-color:                    $light-gray;
 $input-border-width:                    $border-width ;
 
 $input-focus-bg:                        $primary;
@@ -618,7 +614,7 @@ $dropdown-spacer:                   .825rem;
 $dropdown-font-size:                $font-size-sm;
 $dropdown-bg:                       $primary;
 $dropdown-border-width:             $border-width;
-$dropdown-border-color:             $dark-primary;
+$dropdown-border-color:             $light-gray;
 $dropdown-border-radius:            $border-radius;
 $dropdown-item-color:               $body-color;
 $dropdown-item-font-weight:         $font-weight-light;
