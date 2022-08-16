@@ -1,7 +1,7 @@
 // Global settings
 $enable-caret:              true; 
-$enable-rounded:            true;
-$enable-shadows:            true;
+$enable-rounded:            false;
+$enable-shadows:            false;
 $enable-gradients:          false;
 $enable-transitions:        true;
 $enable-grid-classes:       true;
@@ -127,8 +127,13 @@ $yiq-text-dark:             $dark;
 $path--rel      : "/img";
 
 // Body
-$body-bg: $soft;
-$body-color: $gray-900;
+// Setting via CSS vars to support dark-mode overrides
+:root {
+  --c-body: #FDF8F2;
+  --c-text-1: #0B0B14;
+}
+$body-bg: var(--c-body);
+$body-color: var(--c-text-1);
 
 // Shadows
 //$shadow-inset:            inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
@@ -361,8 +366,8 @@ $icon-shape-sm:         4.5rem;
 $icon-shape-xs:         2.5rem;
 $icon-shape-lg:         6.5rem;
 $icon-size:             2.25rem;
-$icon-size-xs:          1.25rem; 
-$icon-size-sm:          1.75rem;   
+$icon-size-xs:          1.25rem;
+$icon-size-sm:          1.75rem;
 $icon-size-lg:          3rem;
 
 
